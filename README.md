@@ -40,7 +40,48 @@ NOTA: En este caso no se realizó la actvación del software.
 
 ### Clonación de repositorio
 
+A continuación se procede a realizar la clonación del github 
+ofrecido por la catedra. Esto se realiza con los siguientes
+comandos:
+
+* git clone URL.git
+* cp proyect.mk.template project.mk
+
+En el archivo project.mk se configura el proyecto, el procesador y la placa.
+
 ### Primer uso con MCUXpresso
+
+Se procede a crear un workspace y un proyecto en base a un archivo 
+existente en la carpete de firware que acabamos de clonar:
+
+* sapi_examples/edu-ciaa-nxp/bare_metal/gpio/gpio_02_blinky
+
+El contenido de la carpeta se presenta acontinuacion:
+
+![Cont_Blinky](https://github.com/jesusphilipraiz/Embebidos/blob/master/TP1/Imagenes/Cont_Blinky.png)
+
+En la misma es posible observar 2 carpetas y un archivo Makefile.
+Como se mencionó en secciones previas, este ultimo archivo indica
+la carpeta donde se ubican los codigos fuentes, ./src, como 
+tambien los correspondientes headers en la carpeta ./inc.
+
+![Makefile](https://github.com/jesusphilipraiz/Embebidos/blob/master/TP1/Imagenes/Makefile.png)
+
+
+|src 	 |inc 	  |Makefile|
+|------  |------  |------  |
+|blinky.c|blinky.h|-----   |
+
+![BlinkyC](https://github.com/jesusphilipraiz/Embebidos/blob/master/TP1/Imagenes/BlinkyC.png)
+
+#### Primera ejecución con MCUXpresso
+
+Tras ejecutar el proyecto previamente mencionado, "blinky_02", se
+procede a analizar linea tras linea. Esto se logra agregando 
+*breakpoint* como tambien haciendo uso de los comandos *Step into*
+y *step over*.
+
+
 
 ### Primer uso con Github
 
